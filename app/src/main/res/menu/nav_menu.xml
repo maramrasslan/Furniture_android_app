@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/nav_home"
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/nav_bed"
+            android:title="Beds"/>
+        <item
+            android:id="@+id/nav_chairs"
+            android:title="Chairs"/>
+        <item
+            android:id="@+id/nav_wardrobe"
+            android:title="Wardrobes"/>
+        <item
+            android:id="@+id/nav_couch"
+            android:title="Couches"/>
+
+
+    </group>
+
+
+
+
+</menu>

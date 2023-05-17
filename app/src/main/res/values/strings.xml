@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="login_email">EmailAddress</string>
+    <string name="login_pass">Password</string>
+    <string name="cust_btn">Customer login</string>
+    <string name="ven_btn">Vendor login</string>
+    <string name="sign_txt">Do not have account yet?</string>
+    <string name="signup_email">EmailAddress</string>
+    <string name="signup_pass">Password</string>
+    <string name="signup">Sign up</string>
+    <string name="login_txt">Log in to start your app experience</string>
+    <string name="editTextPhone">Phone number</string>
+    <string name="editTextAddress">Address</string>
+    <string name="checkout_btn">Place order</string>
+    <string name="productName">Product name</string>
+    <string name="productAmount">Amount</string>
+    <string name="upload">Upload image</string>
+    <string name="addProduct">Add your product here</string>
+    <string name="addProduct_btn">Add product</string>
+    <string name="productPrice">Price</string>
+    <string name="Beds">Beds</string>
+    <string name="Chairs">Chairs</string>
+    <string name="Couch">Couch</string>
+    <string name="Tables">Tables</string>
+    <string name="logout_btn">Logout</string>
+    <string name="back_checkout_btn">Back</string>
+    <string name="open_nav">Open Navigation Drawer </string>
+    <string name="close_nav">Close Navigation Drawer </string>
+    <string name="buttonCart">Add To Cart</string>
+    <string name="Discover">Discover</string>
+</resources>

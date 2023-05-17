@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".WardrobeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraintlayout"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/logout_wardrobe_btn"
+            android:layout_width="137dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="@android:color/white"
+            android:text="@string/logout_btn"
+            android:textColor="#100F0F"
+            app:layout_constraintBottom_toTopOf="@+id/row1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/cart"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.048" />
+
+        <TextView
+            android:id="@+id/discover"
+            android:layout_width="249dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/Discover"
+            android:textColor="@color/lavender"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toStartOf="@+id/cart"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/products"
+            android:text="Your Products"
+            android:textSize="14sp"
+            android:layout_marginStart="18dp"
+            android:textColor="@color/lavender"
+            app:layout_constraintStart_toStartOf="@+id/discover"
+            app:layout_constraintTop_toBottomOf="@+id/discover"
+            app:layout_constraintEnd_toStartOf="@+id/cart"/>
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="42dp"
+            android:layout_height="160dp"
+            android:layout_marginEnd="100dp"
+            android:src="@drawable/ic_cart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/lavender" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="235dp"
+            android:id="@+id/row1"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/discover">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/image1card"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image1name"
+                        android:text="Modern Wardrobe"
+                        android:textSize="15sp"
+                        android:textColor="@color/lavender"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image1" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/image1"
+                        android:src="@drawable/modernwardrobe"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image1price"
+                        android:text="$500"
+                        android:textSize="15sp"
+                        android:textColor="@color/lavender"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image1name" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image1price"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/buttonCart"
+                        tools:layout_editor_absoluteX="45dp"
+                        tools:layout_editor_absoluteY="278dp"
+                        android:layout_centerHorizontal="true"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/image2card"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image2name"
+                        android:text="Double Wardrobe"
+                        android:textSize="15sp"
+                        android:textColor="@color/lavender"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image2price"
+                        android:text="$350"
+                        android:textSize="15sp"
+                        android:textColor="@color/lavender"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image2name" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/image2"
+                        android:src="@drawable/doublewardrobe"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image2price"
+                        android:text="@string/buttonCart"
+                        tools:layout_editor_absoluteX="45dp"
+                        tools:layout_editor_absoluteY="278dp"
+                        android:layout_centerHorizontal="true"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="235dp"
+            android:id="@+id/row2"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/row1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/image3card"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="173dp"
+                    android:layout_height="190dp">
+
+                    <TextView
+                        android:id="@+id/image3name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Glass Wardrobe"
+                        android:textColor="@color/lavender"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image3price"
+                        android:text="$350"
+                        android:textSize="15sp"
+                        android:textColor="@color/lavender"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image3name" />
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/glasswardrobe" />
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image3price"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/buttonCart"
+                        tools:layout_editor_absoluteX="45dp"
+                        tools:layout_editor_absoluteY="278dp"
+                        android:layout_centerHorizontal="true"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/image4card"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image4name"
+                        android:text="Rattan Wardrobe"
+                        android:textSize="15sp"
+                        android:textColor="@color/lavender"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image4" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image4price"
+                        android:text="$350"
+                        android:textSize="15sp"
+                        android:textColor="@color/lavender"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image4name" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/image4"
+                        android:src="@drawable/rattanwardrobe"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <Button
+                        android:id="@+id/button12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image4price"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/buttonCart"
+                        tools:layout_editor_absoluteX="45dp"
+                        tools:layout_editor_absoluteY="278dp"
+                        android:layout_centerHorizontal="true"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="235dp"
+            android:id="@+id/row3"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/row2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/image5card"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="173dp"
+                    android:layout_height="190dp">
+
+                    <TextView
+                        android:id="@+id/image5name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image5"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Sliding Wardrobe"
+                        android:textColor="@color/lavender"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image5price"
+                        android:text="$350"
+                        android:textSize="15sp"
+                        android:textColor="@color/lavender"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image5name" />
+
+                    <ImageView
+                        android:id="@+id/image5"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/slidingdoorwardrobe" />
+
+                    <Button
+                        android:id="@+id/button10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image5price"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/buttonCart"
+                        tools:layout_editor_absoluteX="45dp"
+                        tools:layout_editor_absoluteY="278dp"
+                        android:layout_centerHorizontal="true"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/image6card"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image6name"
+                        android:text="Open Wardrobe"
+                        android:textSize="15sp"
+                        android:textColor="@color/lavender"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image6" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image6price"
+                        android:text="$350"
+                        android:textSize="15sp"
+                        android:textColor="@color/lavender"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image6name" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/image6"
+                        android:src="@drawable/openwardrobe"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <Button
+                        android:id="@+id/button11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image6price"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/buttonCart"
+                        tools:layout_editor_absoluteX="45dp"
+                        tools:layout_editor_absoluteY="278dp"
+                        android:layout_centerHorizontal="true"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
